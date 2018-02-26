@@ -5,17 +5,17 @@ def get_size(start_path = '/media'):
     total_size = 0
     maxm=0
     h=[]
-    q=0
+    #q=0
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
             fp = os.path.join(dirpath, f)
-            q+=1
+            #q+=1
 
             
             try:
             	b= os.path.getsize(fp)
             	total_size += b
-            	print(q)
+            	#print(q)
             	if len(h) < 10:
             		heapq.heappush(h, (float(b)/1000000,f))
             	else:
