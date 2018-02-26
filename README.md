@@ -7,6 +7,7 @@ in case ubuntu or other we give path manually
 
 
 # organizing desktop
+The code is written and tested in ubuntu in case of window file directory needs to be changed
 Here I'm defining two function one for creating folder and one for moving folder
 in the main function I'm creating dictionary of file types
 and I'm coverting name of all extensions in lower case 
